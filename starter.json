@@ -2,78 +2,78 @@
   "1": {
     "endpoint": "Get all the artists",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/artists",
       "headers": null,
       "body": null
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": "content-type: text/html",
+      "statusCode": 200,
+      "body": "HTML page with all artists and bio"
     }
   },
   "2": {
     "endpoint": "Get a specific artist's details based on artistId",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/artists/:artistId",
       "headers": null,
       "body": null
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": "content-type: text/html",
+      "statusCode": 200,
+      "body": "HTML page with specific artist and bio"
     }
   },
   "3": {
     "endpoint": "Add an artist",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/artists",
+      "headers": "Content-Type: application/x-www-form-urlencoded",
+      "body": "name, bio"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
+      "headers": "Location: /artists/:artistId",
+      "statusCode": 201,
       "body": null
     }
   },
   "4": {
     "endpoint": "Edit a specified artist by artistId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "PUT",
+      "URL": "/artists/:artistid",
+      "headers": "Content-Type: application/x-www-form-urlencoded",
+      "body": "name, bio"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
+      "headers": "Location: /artists/:artistId",
+      "statusCode": 202,
       "body": null
     }
   },
   "5": {
     "endpoint": "Delete a specified artist by artistId",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "POST",
+      "URL": "/artists/:artistid",
       "headers": null,
       "body": null
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
+      "headers": "Location: /artists/:artistId",
+      "statusCode": 301,
       "body": null
     }
   },
   "6": {
     "endpoint": "Get all albums of a specific artist based on artistId",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/artists/:artistId/albums",
       "headers": null,
       "body": null
     },
